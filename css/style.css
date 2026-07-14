@@ -1,0 +1,100 @@
+/* =========================================
+   Dr. Raphael Moreira - Odontologia
+   Estrutura base de estilos
+   ⚠️ Cores/tipografia definitivas aguardando
+   identidade visual do cliente
+   ========================================= */
+
+:root {
+  /* Placeholder - substituir quando tivermos a identidade visual */
+  --color-primary: #2C7A7B;
+  --color-secondary: #F7FAFC;
+  --color-text: #1A202C;
+  --color-text-light: #718096;
+  --color-white: #FFFFFF;
+  --color-accent: #38B2AC;
+
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  --spacing-section: 96px;
+  --radius-base: 12px;
+  --transition-base: 0.25s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+section, header, footer {
+  padding: var(--spacing-section) 24px;
+}
+
+/* ===== HERO ===== */
+.section-hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== SOBRE ===== */
+.section-sobre {}
+
+/* ===== TRATAMENTOS ===== */
+.section-tratamentos {}
+
+/* ===== GALERIA ANTES/DEPOIS ===== */
+.section-galeria {}
+
+/* ===== AVALIAÇÕES ===== */
+.section-avaliacoes {}
+
+/* ===== LOCALIZAÇÃO ===== */
+.section-localizacao {}
+
+/* ===== WHATSAPP FLOATING BUTTON ===== */
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background-color: #25D366;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform var(--transition-base);
+  z-index: 100;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.08);
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+  section, header, footer {
+    padding: 64px 16px;
+  }
+}
