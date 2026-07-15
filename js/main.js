@@ -113,3 +113,17 @@ document.addEventListener('DOMContentLoaded', () => {
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 });
+
+
+// ---- Splash de abertura ----
+const splash = document.getElementById('intro-splash');
+if (splash) {
+  document.body.classList.add('intro-active');
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const delay = prefersReduced ? 0 : 1400;
+
+  setTimeout(() => {
+    splash.classList.add('is-hidden');
+    document.body.classList.remove('intro-active');
+  }, delay);
+}

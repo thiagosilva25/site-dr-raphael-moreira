@@ -19,291 +19,304 @@
 </head>
 
 <body>
+  <!-- ===== SPLASH DE ABERTURA ===== -->
+  <div class="intro-splash" id="intro-splash">
+    <img src="assets/images/logo-dark-bg.png" alt="Dr. Raphael Moreira Odontologia" class="intro-splash__logo">
+  </div>
+
   <a href="#top" class="skip-link">Pular para o conteúdo</a>
 
   <!-- ===== HEADER ===== -->
   <header class="header" id="header">
-    <div class="container header__inner">
-      <a href="#top" class="header__logo" aria-label="Dr. Raphael Moreira - página inicial"></a>
+    <a href="#top" class="skip-link">Pular para o conteúdo</a>
 
-      <nav class="nav" id="nav">
-        <ul class="nav__list">
-          <li><a href="#sobre" class="nav__link">Sobre</a></li>
-          <li><a href="#tratamentos" class="nav__link">Tratamentos</a></li>
-          <li><a href="#galeria" class="nav__link">Resultados</a></li>
-          <li><a href="#avaliacoes" class="nav__link">Avaliações</a></li>
-          <li><a href="#contato" class="nav__link">Localização</a></li>
-        </ul>
-      </nav>
+    <!-- ===== HEADER ===== -->
+    <header class="header" id="header">
+      <div class="container header__inner">
+        <a href="#top" class="header__logo" aria-label="Dr. Raphael Moreira - página inicial"></a>
 
-      <a href="#" class="btn btn--whatsapp header__cta" id="whatsapp-header" target="_blank" rel="noopener">
-        <svg class="icon-whatsapp" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
-          <path
-            d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.2h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.85 9.85 0 0 0 12.04 2m0 1.67a8.2 8.2 0 0 1 5.83 2.42 8.19 8.19 0 0 1 2.41 5.82c0 4.55-3.7 8.24-8.25 8.24a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.38c0-4.55 3.7-8.24 8.25-8.24m-4.53 4.7c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02s.87 2.35.99 2.51c.12.16 1.7 2.6 4.14 3.64.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.43-.58 1.63-1.15.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28-.24-.12-1.43-.7-1.65-.79-.22-.08-.38-.12-.55.12-.16.24-.63.79-.77.95-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.63-1.2-1.42-1.34-1.66-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.34-.76-1.83-.2-.48-.4-.42-.55-.42h-.46z" />
-        </svg>
-        Agendar consulta
-      </a>
-
-      <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-
-  <main id="top">
-    <!-- ===== HERO ===== -->
-    <section class="hero" id="hero">
-      <div class="container hero__inner">
-        <div class="hero__content">
-          <p class="eyebrow">Odontologia em Belo Horizonte</p>
-          <h1 class="hero__title">
-            Um sorriso saudável começa com <span class="hero__title-accent">cuidado de verdade</span>
-          </h1>
-          <p class="hero__subtitle">
-            <!-- TODO: substituir por texto de posicionamento definitivo -->
-            Atendimento humanizado e tratamentos modernos para cuidar do seu sorriso em cada etapa da vida.
-          </p>
-          <div class="hero__actions">
-            <a href="#" class="btn btn--primary" id="whatsapp-hero" target="_blank" rel="noopener">Agendar pelo
-              WhatsApp</a>
-            <a href="#tratamentos" class="btn btn--ghost">Ver tratamentos</a>
-          </div>
-        </div>
-
-        <div class="hero__media" aria-hidden="true">
-          <!-- TODO: substituir por foto profissional do Dr. Raphael -->
-          <div class="hero__media-placeholder"><img src="./assets/images/fotoPessoal.JPG" alt="Dr. Raphael Moreira">
-          </div>
-        </div>
-      </div>
-
-      <svg class="hero__wave" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true">
-        <path d="M0,40 C 240,100 480,0 720,40 C 960,80 1200,20 1440,50 L1440,100 L0,100 Z"></path>
-      </svg>
-    </section>
-
-    <!-- ===== SOBRE ===== -->
-    <section class="section about" id="sobre">
-      <div class="container about__inner">
-        <div class="about__media reveal">
-          <div class="about-carousel" id="about-carousel">
-            <div class="about-carousel__track" id="about-carousel-track">
-              <!-- TODO: trocar background-image de cada slide pela foto real -->
-              <div class="about-carousel__slide" style="background-image: url('./assets/images/consultorio1.JPG')">
-              </div>
-              <div class="about-carousel__slide" style="background-image: url('./assets/images/interno.JPG')"></div>
-              <div class="about-carousel__slide" style="background-image: url('./assets/images/fachada.JPG')"></div>
-            </div>
-
-            <button class="about-carousel__arrow about-carousel__arrow--prev" id="carousel-prev"
-              aria-label="Foto anterior">‹</button>
-            <button class="about-carousel__arrow about-carousel__arrow--next" id="carousel-next"
-              aria-label="Próxima foto">›</button>
-
-            <div class="about-carousel__dots" id="carousel-dots">
-              <button class="about-carousel__dot is-active" data-index="0" aria-label="Ir para foto 1"></button>
-              <button class="about-carousel__dot" data-index="1" aria-label="Ir para foto 2"></button>
-              <button class="about-carousel__dot" data-index="2" aria-label="Ir para foto 3"></button>
-            </div>
-          </div>
-        </div>
-        <div class="about__content reveal">
-          <p class="eyebrow">Sobre o Dr. Raphael</p>
-          <h2 class="section__title">Cuidado próximo, técnica atualizada</h2>
-          <p class="about__text">
-            <!-- TODO: aguardando parágrafo pessoal (motivação/filosofia de atendimento) -->
-            Formado em Odontologia pela FEAD (Arnaldo) em 2016, o Dr. Raphael Moreira soma 10 anos
-            de experiência clínica. É especialista em Endodontia pelo IES (2019) e possui
-            aperfeiçoamento em Endodontia e Dentística.
-          </p>
-          <ul class="about__highlights">
-            <li>Formado em Odontologia — FEAD (Arnaldo), 2016</li>
-            <li>Especialização em Endodontia — IES, 2019</li>
-            <li>10 anos de experiência clínica</li>
+        <nav class="nav" id="nav">
+          <ul class="nav__list">
+            <li><a href="#sobre" class="nav__link">Sobre</a></li>
+            <li><a href="#tratamentos" class="nav__link">Tratamentos</a></li>
+            <li><a href="#galeria" class="nav__link">Resultados</a></li>
+            <li><a href="#avaliacoes" class="nav__link">Avaliações</a></li>
+            <li><a href="#contato" class="nav__link">Localização</a></li>
           </ul>
-        </div>
+        </nav>
+
+        <a href="#" class="btn btn--whatsapp header__cta" id="whatsapp-header" target="_blank" rel="noopener">
+          <svg class="icon-whatsapp" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+            <path
+              d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.2h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.85 9.85 0 0 0 12.04 2m0 1.67a8.2 8.2 0 0 1 5.83 2.42 8.19 8.19 0 0 1 2.41 5.82c0 4.55-3.7 8.24-8.25 8.24a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.38c0-4.55 3.7-8.24 8.25-8.24m-4.53 4.7c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02s.87 2.35.99 2.51c.12.16 1.7 2.6 4.14 3.64.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.43-.58 1.63-1.15.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28-.24-.12-1.43-.7-1.65-.79-.22-.08-.38-.12-.55.12-.16.24-.63.79-.77.95-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.63-1.2-1.42-1.34-1.66-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.34-.76-1.83-.2-.48-.4-.42-.55-.42h-.46z" />
+          </svg>
+          Agendar consulta
+        </a>
+
+        <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
       </div>
-    </section>
+    </header>
 
-    <!-- ===== TRATAMENTOS ===== -->
-    <section class="section treatments" id="tratamentos">
-      <div class="container">
-        <p class="eyebrow eyebrow--center">O que oferecemos</p>
-        <h2 class="section__title section__title--center">Tratamentos</h2>
+    <main id="top">
+      <!-- ===== HERO ===== -->
+      <section class="hero" id="hero">
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <p class="eyebrow">Odontologia em Belo Horizonte</p>
+            <h1 class="hero__title">
+              Um sorriso saudável começa com <span class="hero__title-accent">cuidado de verdade</span>
+            </h1>
+            <p class="hero__subtitle">
+              <!-- TODO: substituir por texto de posicionamento definitivo -->
+              Atendimento humanizado e tratamentos modernos para cuidar do seu sorriso em cada etapa da vida.
+            </p>
+            <div class="hero__actions">
+              <a href="#" class="btn btn--primary" id="whatsapp-hero" target="_blank" rel="noopener">Agendar pelo
+                WhatsApp</a>
+              <a href="#tratamentos" class="btn btn--ghost">Ver tratamentos</a>
+            </div>
+          </div>
 
-        <!-- TODO: lista de tratamentos ainda não confirmada pelo Dr. Raphael -->
-        <div class="treatments__grid">
-          <article class="treatment-card reveal">
-            <div class="treatment-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
-                stroke-linejoin="round">
-                <circle cx="12" cy="12" r="5"></circle>
-                <line x1="12" y1="1" x2="12" y2="3"></line>
-                <line x1="12" y1="21" x2="12" y2="23"></line>
-                <line x1="4.2" y1="4.2" x2="5.6" y2="5.6"></line>
-                <line x1="18.4" y1="18.4" x2="19.8" y2="19.8"></line>
-                <line x1="1" y1="12" x2="3" y2="12"></line>
-                <line x1="21" y1="12" x2="23" y2="12"></line>
-                <line x1="4.2" y1="19.8" x2="5.6" y2="18.4"></line>
-                <line x1="18.4" y1="5.6" x2="19.8" y2="4.2"></line>
-              </svg>
+          <div class="hero__media" aria-hidden="true">
+            <!-- TODO: substituir por foto profissional do Dr. Raphael -->
+            <div class="hero__media-placeholder"><img src="./assets/images/fotoPessoal.JPG" alt="Dr. Raphael Moreira">
             </div>
-            <h3 class="treatment-card__title">Clareamento Dental</h3>
-          </article>
-          <article class="treatment-card reveal">
-            <div class="treatment-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path
-                  d="M12 3c-3.5 0-6 2.2-6 6 0 3.5 1.3 8.5 2.8 10.5.6.8 1.5.5 1.8-.5.4-1.3.7-3 1.4-3s1 1.7 1.4 3c.3 1 1.2 1.3 1.8.5C16.7 17.5 18 12.5 18 9c0-3.8-2.5-6-6-6Z">
-                </path>
-                <path d="M9 5c-.8 1-1.2 2.4-1.2 4" stroke-dasharray="1.5 2"></path>
-              </svg>
-            </div>
-            <h3 class="treatment-card__title">Facetas de Porcelana/Resina</h3>
-          </article>
-          <article class="treatment-card reveal">
-            <div class="treatment-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path
-                  d="M4 9c0-3 2-5 4-5s2 2 4 2 2-2 4-2 4 2 4 5c0 3-1 4-1 6s1 3 0 5c-.6 1.3-2 1-2.5-.5-.3-1-.5-2-1.5-2s-1.3 1.2-2 2.5c-.5 1-1.5 1-2 0-.7-1.3-1-2.5-2-2.5s-1.2 1-1.5 2c-.5 1.5-1.9 1.8-2.5.5-1-2-0-3 0-5s-1-3-1-6Z">
-                </path>
-              </svg>
-            </div>
-            <h3 class="treatment-card__title">Próteses</h3>
-          </article>
-          <article class="treatment-card reveal">
-            <div class="treatment-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path d="M9 2h6v6l-2 2v10a2 2 0 0 1-4 0V10L7 8V2Z"></path>
-                <line x1="9" y1="2" x2="15" y2="2"></line>
-              </svg>
-            </div>
-            <h3 class="treatment-card__title">Canal (Endodontia)</h3>
-          </article>
-          <article class="treatment-card reveal">
-            <div class="treatment-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path d="M6 3h4l1 4-2 2v9a3 3 0 0 1-6 0v-6c0-4 1-7 3-9Z"></path>
-                <line x1="14" y1="6" x2="21" y2="6"></line>
-                <line x1="14" y1="9" x2="21" y2="9"></line>
-                <line x1="14" y1="12" x2="19" y2="12"></line>
-              </svg>
-            </div>
-            <h3 class="treatment-card__title">Limpeza e Profilaxia</h3>
-          </article>
-          <article class="treatment-card reveal">
-            <div class="treatment-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path
-                  d="M9 3c-2.5 0-4 1.8-4 4.3 0 2.5.9 5.7 1.9 6.9.5.6 1 .3 1.2-.4.3-.9.5-2 .9-2s.6 1.1.9 2c.2.7.7 1 1.2.4 1-1.2 1.9-4.4 1.9-6.9C13 4.8 11.5 3 9 3Z">
-                </path>
-                <line x1="15" y1="4" x2="21" y2="10"></line>
-                <line x1="21" y1="4" x2="15" y2="10"></line>
-              </svg>
-            </div>
-            <h3 class="treatment-card__title">Extração de Dente/Siso</h3>
-          </article>
-          <article class="treatment-card reveal">
-            <div class="treatment-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path
-                  d="M12 3c-2.8 0-5 2-5 5.3 0 3 1.1 7.4 2.4 9.1.5.7 1.2.4 1.5-.4.3-1 .6-2.5 1.1-2.5s.8 1.5 1.1 2.5c.3.8 1 1.1 1.5.4C15.9 15.7 17 11.3 17 8.3 17 5 14.8 3 12 3Z">
-                </path>
-                <path d="M12 3c-1.6 0-2.8 1-2.8 3" opacity="0.5"></path>
-              </svg>
-            </div>
-            <h3 class="treatment-card__title">Lentes de Contato Dental</h3>
-          </article>
-          <article class="treatment-card reveal">
-            <div class="treatment-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path d="M3 9c0-2.5 2-4 9-4s9 1.5 9 4c0 1.8-1 2.6-1 4H4c0-1.4-1-2.2-1-4Z"></path>
-                <path d="M5 13v1.5c0 1.4 1.1 2.5 2.5 2.5h9c1.4 0 2.5-1.1 2.5-2.5V13"></path>
-                <line x1="8" y1="9" x2="8" y2="11"></line>
-                <line x1="12" y1="9" x2="12" y2="11"></line>
-                <line x1="16" y1="9" x2="16" y2="11"></line>
-              </svg>
-            </div>
-            <h3 class="treatment-card__title">Bruxismo/Placas</h3>
-          </article>
+          </div>
         </div>
-      </div>
-    </section>
 
-    <!-- ===== GALERIA ANTES/DEPOIS ===== -->
-    <section class="section gallery" id="galeria">
-      <div class="container">
-        <p class="eyebrow eyebrow--center">Facetas de Resina</p>
-        <h2 class="section__title section__title--center">Antes &amp; Depois</h2>
+        <svg class="hero__wave" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M0,40 C 240,100 480,0 720,40 C 960,80 1200,20 1440,50 L1440,100 L0,100 Z"></path>
+        </svg>
+      </section>
 
-        <!-- TODO: trocar os background-image de .ba-slider__before/.ba-slider__after pelas fotos reais -->
-        <div class="gallery__grid" id="gallery-grid">
+      <!-- ===== SOBRE ===== -->
+      <section class="section about" id="sobre">
+        <div class="container about__inner">
+          <div class="about__media reveal">
+            <div class="about-carousel" id="about-carousel">
+              <div class="about-carousel__track" id="about-carousel-track">
+                <!-- TODO: trocar background-image de cada slide pela foto real -->
+                <div class="about-carousel__slide" style="background-image: url('./assets/images/consultorio1.JPG')">
+                </div>
+                <div class="about-carousel__slide" style="background-image: url('./assets/images/interno.JPG')"></div>
+                <div class="about-carousel__slide" style="background-image: url('./assets/images/fachada.JPG')"></div>
+              </div>
 
-          <div class="gallery-item reveal">
-            <div class="ba-slider">
-              <div class="ba-slider__after"><span class="ba-slider__label ba-slider__label--after">Depois</span></div>
-              <div class="ba-slider__before"><span class="ba-slider__label ba-slider__label--before">Antes</span></div>
-              <div class="ba-slider__handle"><span class="ba-slider__handle-grip"></span></div>
-              <input type="range" class="ba-slider__input" min="0" max="100" value="50"
-                aria-label="Arraste para comparar antes e depois">
+              <button class="about-carousel__arrow about-carousel__arrow--prev" id="carousel-prev"
+                aria-label="Foto anterior">‹</button>
+              <button class="about-carousel__arrow about-carousel__arrow--next" id="carousel-next"
+                aria-label="Próxima foto">›</button>
+
+              <div class="about-carousel__dots" id="carousel-dots">
+                <button class="about-carousel__dot is-active" data-index="0" aria-label="Ir para foto 1"></button>
+                <button class="about-carousel__dot" data-index="1" aria-label="Ir para foto 2"></button>
+                <button class="about-carousel__dot" data-index="2" aria-label="Ir para foto 3"></button>
+              </div>
             </div>
           </div>
-
-          <div class="gallery-item reveal">
-            <div class="ba-slider">
-              <div class="ba-slider__after"><span class="ba-slider__label ba-slider__label--after">Depois</span></div>
-              <div class="ba-slider__before"><span class="ba-slider__label ba-slider__label--before">Antes</span></div>
-              <div class="ba-slider__handle"><span class="ba-slider__handle-grip"></span></div>
-              <input type="range" class="ba-slider__input" min="0" max="100" value="50"
-                aria-label="Arraste para comparar antes e depois">
-            </div>
+          <div class="about__content reveal">
+            <p class="eyebrow">Sobre o Dr. Raphael</p>
+            <h2 class="section__title">Cuidado próximo, técnica atualizada</h2>
+            <p class="about__text">
+              <!-- TODO: aguardando parágrafo pessoal (motivação/filosofia de atendimento) -->
+              Formado em Odontologia pela FEAD (Arnaldo) em 2016, o Dr. Raphael Moreira soma 10 anos
+              de experiência clínica. É especialista em Endodontia pelo IES (2019) e possui
+              aperfeiçoamento em Endodontia e Dentística.
+            </p>
+            <ul class="about__highlights">
+              <li>Formado em Odontologia — FEAD (Arnaldo), 2016</li>
+              <li>Especialização em Endodontia — IES, 2019</li>
+              <li>10 anos de experiência clínica</li>
+            </ul>
           </div>
-
-          <div class="gallery-item reveal">
-            <div class="ba-slider">
-              <div class="ba-slider__after"><span class="ba-slider__label ba-slider__label--after">Depois</span></div>
-              <div class="ba-slider__before"><span class="ba-slider__label ba-slider__label--before">Antes</span></div>
-              <div class="ba-slider__handle"><span class="ba-slider__handle-grip"></span></div>
-              <input type="range" class="ba-slider__input" min="0" max="100" value="50"
-                aria-label="Arraste para comparar antes e depois">
-            </div>
-          </div>
-
-          <div class="gallery-item reveal">
-            <div class="ba-slider">
-              <div class="ba-slider__after"><span class="ba-slider__label ba-slider__label--after">Depois</span></div>
-              <div class="ba-slider__before"><span class="ba-slider__label ba-slider__label--before">Antes</span></div>
-              <div class="ba-slider__handle"><span class="ba-slider__handle-grip"></span></div>
-              <input type="range" class="ba-slider__input" min="0" max="100" value="50"
-                aria-label="Arraste para comparar antes e depois">
-            </div>
-          </div>
-
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ===== AVALIAÇÕES GOOGLE ===== -->
-    <section class="section reviews" id="avaliacoes">
+      <!-- ===== TRATAMENTOS ===== -->
+      <section class="section treatments" id="tratamentos">
+        <div class="container">
+          <p class="eyebrow eyebrow--center">O que oferecemos</p>
+          <h2 class="section__title section__title--center">Tratamentos</h2>
 
-      <div class="container">
-        <p class="eyebrow eyebrow--center">O que dizem os pacientes</p>
-        <h2 class="section__title section__title--center">Avaliações no Google</h2>
-        <!-- Elfsight Google Reviews | Untitled Google Reviews -->
-        <script src="https://elfsightcdn.com/platform.js" async></script>
-        <div class="elfsight-app-45a30f34-4b9c-4f9a-8ed1-da9151013350" style="visibility: hidden"
-          data-elfsight-app-lazy></div>
+          <!-- TODO: lista de tratamentos ainda não confirmada pelo Dr. Raphael -->
+          <div class="treatments__grid">
+            <article class="treatment-card reveal">
+              <div class="treatment-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="5"></circle>
+                  <line x1="12" y1="1" x2="12" y2="3"></line>
+                  <line x1="12" y1="21" x2="12" y2="23"></line>
+                  <line x1="4.2" y1="4.2" x2="5.6" y2="5.6"></line>
+                  <line x1="18.4" y1="18.4" x2="19.8" y2="19.8"></line>
+                  <line x1="1" y1="12" x2="3" y2="12"></line>
+                  <line x1="21" y1="12" x2="23" y2="12"></line>
+                  <line x1="4.2" y1="19.8" x2="5.6" y2="18.4"></line>
+                  <line x1="18.4" y1="5.6" x2="19.8" y2="4.2"></line>
+                </svg>
+              </div>
+              <h3 class="treatment-card__title">Clareamento Dental</h3>
+            </article>
+            <article class="treatment-card reveal">
+              <div class="treatment-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path
+                    d="M12 3c-3.5 0-6 2.2-6 6 0 3.5 1.3 8.5 2.8 10.5.6.8 1.5.5 1.8-.5.4-1.3.7-3 1.4-3s1 1.7 1.4 3c.3 1 1.2 1.3 1.8.5C16.7 17.5 18 12.5 18 9c0-3.8-2.5-6-6-6Z">
+                  </path>
+                  <path d="M9 5c-.8 1-1.2 2.4-1.2 4" stroke-dasharray="1.5 2"></path>
+                </svg>
+              </div>
+              <h3 class="treatment-card__title">Facetas de Porcelana/Resina</h3>
+            </article>
+            <article class="treatment-card reveal">
+              <div class="treatment-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path
+                    d="M4 9c0-3 2-5 4-5s2 2 4 2 2-2 4-2 4 2 4 5c0 3-1 4-1 6s1 3 0 5c-.6 1.3-2 1-2.5-.5-.3-1-.5-2-1.5-2s-1.3 1.2-2 2.5c-.5 1-1.5 1-2 0-.7-1.3-1-2.5-2-2.5s-1.2 1-1.5 2c-.5 1.5-1.9 1.8-2.5.5-1-2-0-3 0-5s-1-3-1-6Z">
+                  </path>
+                </svg>
+              </div>
+              <h3 class="treatment-card__title">Próteses</h3>
+            </article>
+            <article class="treatment-card reveal">
+              <div class="treatment-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M9 2h6v6l-2 2v10a2 2 0 0 1-4 0V10L7 8V2Z"></path>
+                  <line x1="9" y1="2" x2="15" y2="2"></line>
+                </svg>
+              </div>
+              <h3 class="treatment-card__title">Canal (Endodontia)</h3>
+            </article>
+            <article class="treatment-card reveal">
+              <div class="treatment-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M6 3h4l1 4-2 2v9a3 3 0 0 1-6 0v-6c0-4 1-7 3-9Z"></path>
+                  <line x1="14" y1="6" x2="21" y2="6"></line>
+                  <line x1="14" y1="9" x2="21" y2="9"></line>
+                  <line x1="14" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </div>
+              <h3 class="treatment-card__title">Limpeza e Profilaxia</h3>
+            </article>
+            <article class="treatment-card reveal">
+              <div class="treatment-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path
+                    d="M9 3c-2.5 0-4 1.8-4 4.3 0 2.5.9 5.7 1.9 6.9.5.6 1 .3 1.2-.4.3-.9.5-2 .9-2s.6 1.1.9 2c.2.7.7 1 1.2.4 1-1.2 1.9-4.4 1.9-6.9C13 4.8 11.5 3 9 3Z">
+                  </path>
+                  <line x1="15" y1="4" x2="21" y2="10"></line>
+                  <line x1="21" y1="4" x2="15" y2="10"></line>
+                </svg>
+              </div>
+              <h3 class="treatment-card__title">Extração de Dente/Siso</h3>
+            </article>
+            <article class="treatment-card reveal">
+              <div class="treatment-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path
+                    d="M12 3c-2.8 0-5 2-5 5.3 0 3 1.1 7.4 2.4 9.1.5.7 1.2.4 1.5-.4.3-1 .6-2.5 1.1-2.5s.8 1.5 1.1 2.5c.3.8 1 1.1 1.5.4C15.9 15.7 17 11.3 17 8.3 17 5 14.8 3 12 3Z">
+                  </path>
+                  <path d="M12 3c-1.6 0-2.8 1-2.8 3" opacity="0.5"></path>
+                </svg>
+              </div>
+              <h3 class="treatment-card__title">Lentes de Contato Dental</h3>
+            </article>
+            <article class="treatment-card reveal">
+              <div class="treatment-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M3 9c0-2.5 2-4 9-4s9 1.5 9 4c0 1.8-1 2.6-1 4H4c0-1.4-1-2.2-1-4Z"></path>
+                  <path d="M5 13v1.5c0 1.4 1.1 2.5 2.5 2.5h9c1.4 0 2.5-1.1 2.5-2.5V13"></path>
+                  <line x1="8" y1="9" x2="8" y2="11"></line>
+                  <line x1="12" y1="9" x2="12" y2="11"></line>
+                  <line x1="16" y1="9" x2="16" y2="11"></line>
+                </svg>
+              </div>
+              <h3 class="treatment-card__title">Bruxismo/Placas</h3>
+            </article>
+          </div>
+        </div>
+      </section>
 
-        <!-- Link do Google Business: https://share.google/FizXBiq9aHfG5l11f -->
-        <!-- TODO: substituir por widget de embed (ex: EmbedSocial, Elfsight, ou iframe) -->
-        <!-- <div class="reviews__grid">
+      <!-- ===== GALERIA ANTES/DEPOIS ===== -->
+      <section class="section gallery" id="galeria">
+        <div class="container">
+          <p class="eyebrow eyebrow--center">Facetas de Resina</p>
+          <h2 class="section__title section__title--center">Antes &amp; Depois</h2>
+
+          <!-- TODO: trocar os background-image de .ba-slider__before/.ba-slider__after pelas fotos reais -->
+          <div class="gallery__grid" id="gallery-grid">
+
+            <div class="gallery-item reveal">
+              <div class="ba-slider">
+                <div class="ba-slider__after"><span class="ba-slider__label ba-slider__label--after">Depois</span></div>
+                <div class="ba-slider__before"><span class="ba-slider__label ba-slider__label--before">Antes</span>
+                </div>
+                <div class="ba-slider__handle"><span class="ba-slider__handle-grip"></span></div>
+                <input type="range" class="ba-slider__input" min="0" max="100" value="50"
+                  aria-label="Arraste para comparar antes e depois">
+              </div>
+            </div>
+
+            <div class="gallery-item reveal">
+              <div class="ba-slider">
+                <div class="ba-slider__after"><span class="ba-slider__label ba-slider__label--after">Depois</span></div>
+                <div class="ba-slider__before"><span class="ba-slider__label ba-slider__label--before">Antes</span>
+                </div>
+                <div class="ba-slider__handle"><span class="ba-slider__handle-grip"></span></div>
+                <input type="range" class="ba-slider__input" min="0" max="100" value="50"
+                  aria-label="Arraste para comparar antes e depois">
+              </div>
+            </div>
+
+            <div class="gallery-item reveal">
+              <div class="ba-slider">
+                <div class="ba-slider__after"><span class="ba-slider__label ba-slider__label--after">Depois</span></div>
+                <div class="ba-slider__before"><span class="ba-slider__label ba-slider__label--before">Antes</span>
+                </div>
+                <div class="ba-slider__handle"><span class="ba-slider__handle-grip"></span></div>
+                <input type="range" class="ba-slider__input" min="0" max="100" value="50"
+                  aria-label="Arraste para comparar antes e depois">
+              </div>
+            </div>
+
+            <div class="gallery-item reveal">
+              <div class="ba-slider">
+                <div class="ba-slider__after"><span class="ba-slider__label ba-slider__label--after">Depois</span></div>
+                <div class="ba-slider__before"><span class="ba-slider__label ba-slider__label--before">Antes</span>
+                </div>
+                <div class="ba-slider__handle"><span class="ba-slider__handle-grip"></span></div>
+                <input type="range" class="ba-slider__input" min="0" max="100" value="50"
+                  aria-label="Arraste para comparar antes e depois">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== AVALIAÇÕES GOOGLE ===== -->
+      <section class="section reviews" id="avaliacoes">
+
+        <div class="container">
+          <p class="eyebrow eyebrow--center">O que dizem os pacientes</p>
+          <h2 class="section__title section__title--center">Avaliações no Google</h2>
+          <!-- Elfsight Google Reviews | Untitled Google Reviews -->
+          <script src="https://elfsightcdn.com/platform.js" async></script>
+          <div class="elfsight-app-45a30f34-4b9c-4f9a-8ed1-da9151013350" style="visibility: hidden"
+            data-elfsight-app-lazy></div>
+
+          <!-- Link do Google Business: https://share.google/FizXBiq9aHfG5l11f -->
+          <!-- TODO: substituir por widget de embed (ex: EmbedSocial, Elfsight, ou iframe) -->
+          <!-- <div class="reviews__grid">
           <article class="review-card reveal">
             <div class="review-card__stars" aria-label="5 de 5 estrelas">★★★★★</div>
             <p class="review-card__text">Atendimento de excelência. O Raphael demonstrou muito profissionalismo, foi
@@ -335,59 +348,59 @@
           </a>
         </div>
       </div> -->
-    </section>
+      </section>
 
-    <!-- ===== LOCALIZAÇÃO ===== -->
-    <section class="section location" id="contato">
-      <div class="container location__inner">
-        <div class="location__info reveal">
-          <p class="eyebrow">Visite o consultório</p>
-          <h2 class="section__title">Localização &amp; Horários</h2>
+      <!-- ===== LOCALIZAÇÃO ===== -->
+      <section class="section location" id="contato">
+        <div class="container location__inner">
+          <div class="location__info reveal">
+            <p class="eyebrow">Visite o consultório</p>
+            <h2 class="section__title">Localização &amp; Horários</h2>
 
-          <div class="location__block">
-            <h3 class="location__label">Endereço</h3>
-            <p>Rua Frei Leopoldo, 20 - Ouro Preto<br>Belo Horizonte - MG, 31310-190</p>
+            <div class="location__block">
+              <h3 class="location__label">Endereço</h3>
+              <p>Rua Frei Leopoldo, 20 - Ouro Preto<br>Belo Horizonte - MG, 31310-190</p>
+            </div>
+
+            <div class="location__block">
+              <h3 class="location__label">Horário de funcionamento</h3>
+              <p>Segunda a sexta, das 9h às 18h30</p>
+            </div>
+
+            <a href="#" class="btn btn--primary" id="whatsapp-location" target="_blank" rel="noopener">Agendar
+              consulta</a>
           </div>
 
-          <div class="location__block">
-            <h3 class="location__label">Horário de funcionamento</h3>
-            <p>Segunda a sexta, das 9h às 18h30</p>
+          <div class="location__map reveal">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.254325726807!2d-43.979283099999996!3d-19.87148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa691d6b688e707%3A0x5d86e91c3961a14f!2sDr.%20Raphael%20Moreira%20-%20Dentista!5e0!3m2!1spt-BR!2sbr!4v1784119090293!5m2!1spt-BR!2sbr"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"></iframe>
           </div>
-
-          <a href="#" class="btn btn--primary" id="whatsapp-location" target="_blank" rel="noopener">Agendar
-            consulta</a>
         </div>
+      </section>
 
-        <div class="location__map reveal">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.254325726807!2d-43.979283099999996!3d-19.87148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa691d6b688e707%3A0x5d86e91c3961a14f!2sDr.%20Raphael%20Moreira%20-%20Dentista!5e0!3m2!1spt-BR!2sbr!4v1784119090293!5m2!1spt-BR!2sbr"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="strict-origin-when-cross-origin"></iframe>
-        </div>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span class="footer__logo-text">Dr. Raphael Moreira</span>
+        <p class="footer__text">Rua Frei Leopoldo, 20 - Ouro Preto, Belo Horizonte - MG</p>
+        <p class="footer__copy">&copy; <span id="year"></span> Dr. Raphael Moreira. Todos os direitos reservados.</p>
       </div>
-    </section>
+    </footer>
 
-  </main>
+    <!-- Botão flutuante WhatsApp -->
+    <a href="#" class="whatsapp-float" id="whatsapp-float" target="_blank" rel="noopener"
+      aria-label="Agendar consulta pelo WhatsApp">
+      <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true">
+        <path
+          d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.2h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.85 9.85 0 0 0 12.04 2m0 1.67a8.2 8.2 0 0 1 5.83 2.42 8.19 8.19 0 0 1 2.41 5.82c0 4.55-3.7 8.24-8.25 8.24a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.38c0-4.55 3.7-8.24 8.25-8.24m-4.53 4.7c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02s.87 2.35.99 2.51c.12.16 1.7 2.6 4.14 3.64.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.43-.58 1.63-1.15.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28-.24-.12-1.43-.7-1.65-.79-.22-.08-.38-.12-.55.12-.16.24-.63.79-.77.95-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.63-1.2-1.42-1.34-1.66-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.34-.76-1.83-.2-.48-.4-.42-.55-.42h-.46z" />
+      </svg>
+    </a>
 
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="container footer__inner">
-      <span class="footer__logo-text">Dr. Raphael Moreira</span>
-      <p class="footer__text">Rua Frei Leopoldo, 20 - Ouro Preto, Belo Horizonte - MG</p>
-      <p class="footer__copy">&copy; <span id="year"></span> Dr. Raphael Moreira. Todos os direitos reservados.</p>
-    </div>
-  </footer>
-
-  <!-- Botão flutuante WhatsApp -->
-  <a href="#" class="whatsapp-float" id="whatsapp-float" target="_blank" rel="noopener"
-    aria-label="Agendar consulta pelo WhatsApp">
-    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true">
-      <path
-        d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.2h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.85 9.85 0 0 0 12.04 2m0 1.67a8.2 8.2 0 0 1 5.83 2.42 8.19 8.19 0 0 1 2.41 5.82c0 4.55-3.7 8.24-8.25 8.24a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.38c0-4.55 3.7-8.24 8.25-8.24m-4.53 4.7c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02s.87 2.35.99 2.51c.12.16 1.7 2.6 4.14 3.64.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.43-.58 1.63-1.15.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28-.24-.12-1.43-.7-1.65-.79-.22-.08-.38-.12-.55.12-.16.24-.63.79-.77.95-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.63-1.2-1.42-1.34-1.66-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.34-.76-1.83-.2-.48-.4-.42-.55-.42h-.46z" />
-    </svg>
-  </a>
-
-  <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
