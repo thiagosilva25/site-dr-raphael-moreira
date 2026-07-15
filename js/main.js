@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ---- WhatsApp: link com mensagem pré-preenchida ----
   // TODO: confirmar número final do WhatsApp do Dr. Raphael
   const WHATSAPP_NUMBER = '5531982603364';
-  const WHATSAPP_MESSAGE = 'Olá, vim pelo site e gostaria de agendar uma consulta';
+  const WHATSAPP_MESSAGE = 'Olá, vim pelo site e gostaria de agendar uma consulta!';
   const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
 
   document.querySelectorAll('#whatsapp-header, #whatsapp-hero, #whatsapp-location, #whatsapp-float')
