@@ -32,6 +32,20 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+  // ---- Slider Antes/Depois (arrastar para comparar) ----
+  document.querySelectorAll('.ba-slider').forEach(slider => {
+    const before = slider.querySelector('.ba-slider__before');
+    const handle = slider.querySelector('.ba-slider__handle');
+    const input = slider.querySelector('.ba-slider__input');
+
+    const update = (value) => {
+      before.style.clipPath = `inset(0 ${100 - value}% 0 0)`;
+      handle.style.left = `${value}%`;
+    };
+
+    input.addEventListener('input', (e) => update(e.target.value));
+    update(input.value); // posição inicial (50%)
+  });
 
   // ---- Filtro da galeria Antes/Depois ----
   const filterButtons = document.querySelectorAll('.filter-btn');
@@ -39,11 +53,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   filterButtons.forEach(btn => {
     btn.addEventListener('click', () => {
-      filterButtons.forEach(b => b.classList.remove('is-active'));
+      filterButtons.forEach(b => {
+        b.classList.remove('is-active');
+        b.setAttribute('aria-pressed', 'false');
+      });
       btn.classList.add('is-active');
+      btn.setAttribute('aria-pressed', 'true');
 
       const filter = btn.dataset.filter;
-
       galleryItems.forEach(item => {
         const match = filter === 'all' || item.dataset.category === filter;
         item.classList.toggle('is-hidden', !match);
