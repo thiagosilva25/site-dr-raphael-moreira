@@ -762,7 +762,6 @@ h3 {
   appearance: none;
   background: transparent;
   cursor: ew-resize;
-  touch-action: none;
 }
 
 .ba-slider__input::-webkit-slider-thumb {
